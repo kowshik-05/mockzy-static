@@ -1,4 +1,5 @@
 import React from "react";
+import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -36,34 +37,26 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
-            aria-label="Twitter"
           >
-            <i className="fa-brands fa-twitter text-lg"></i>
+            <FaTwitter size={20} />
           </a>
           <a
             href="https://linkedin.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
-            aria-label="LinkedIn"
           >
-            <i className="fa-brands fa-linkedin text-lg"></i>
+            <FaLinkedin size={20} />
           </a>
           <a
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
-            aria-label="Instagram"
           >
-            <i className="fa-brands fa-instagram text-lg"></i>
+            <FaInstagram size={20} />
           </a>
         </div>
-      </div>
-
-      {/* Divider + Bottom Note */}
-      <div className="mt-10 border-t border-zinc-800 pt-6 text-center text-sm text-zinc-500">
-        © {new Date().getFullYear()} MockupAI. All rights reserved.
       </div>
     </footer>
   );
